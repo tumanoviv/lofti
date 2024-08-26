@@ -1,9 +1,10 @@
-import { greetUser } from '$utils/greet';
 // src/index.ts
 import './index.css';
 
+import { gsap } from 'gsap';
+
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+  console.log('gggg');
+  gsap.to('.box', { x: 300, duration: 5 });
 });
